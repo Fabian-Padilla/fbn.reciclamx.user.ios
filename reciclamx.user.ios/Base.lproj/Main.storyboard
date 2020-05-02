@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,85 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="reciclamx_user_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3JR-0n-WS6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0W-5T-1qo" userLabel="View buttons">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo init" translatesAutoresizingMaskIntoConstraints="NO" id="RV4-yQ-8W4">
+                                                <rect key="frame" x="99" y="189" width="216" height="48"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lbl descripcion" translatesAutoresizingMaskIntoConstraints="NO" id="Gtf-3g-Vra">
+                                                <rect key="frame" x="49" y="267" width="316" height="132"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Gtf-3g-Vra" firstAttribute="centerX" secondItem="D0W-5T-1qo" secondAttribute="centerX" id="4lw-QS-M2e"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gtf-3g-Vra" secondAttribute="bottom" constant="10" id="OoG-NU-xKI"/>
+                                            <constraint firstItem="Gtf-3g-Vra" firstAttribute="top" secondItem="RV4-yQ-8W4" secondAttribute="bottom" constant="30" id="PLE-c1-fbe"/>
+                                            <constraint firstItem="RV4-yQ-8W4" firstAttribute="centerX" secondItem="D0W-5T-1qo" secondAttribute="centerX" id="pbm-LO-Dqs"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pis-uS-pEl" userLabel="View access">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="409"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLe-WW-3Bw">
+                                                <rect key="frame" x="40" y="300" width="334" height="109"/>
+                                                <state key="normal" image="btn log in"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fn-dt-Fjd">
+                                                <rect key="frame" x="40" y="10" width="334" height="62"/>
+                                                <state key="normal" image="btn log FB"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nP-T5-gvz">
+                                                <rect key="frame" x="40" y="82" width="334" height="62"/>
+                                                <state key="normal" image="btn log email"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-Qw-C5G">
+                                                <rect key="frame" x="185" y="154" width="156" height="28"/>
+                                                <state key="normal" backgroundImage="lbl explorar app"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h4Y-Qw-C5G" firstAttribute="top" secondItem="6nP-T5-gvz" secondAttribute="bottom" constant="10" id="JrT-Gm-8Kk"/>
+                                            <constraint firstItem="mLe-WW-3Bw" firstAttribute="centerX" secondItem="Pis-uS-pEl" secondAttribute="centerX" id="Q2r-46-E6l"/>
+                                            <constraint firstItem="6nP-T5-gvz" firstAttribute="top" secondItem="1Fn-dt-Fjd" secondAttribute="bottom" constant="10" id="Rkl-VH-Gxc"/>
+                                            <constraint firstItem="1Fn-dt-Fjd" firstAttribute="top" secondItem="Pis-uS-pEl" secondAttribute="top" constant="10" id="XuG-em-fSD"/>
+                                            <constraint firstItem="6nP-T5-gvz" firstAttribute="centerX" secondItem="Pis-uS-pEl" secondAttribute="centerX" id="oCx-4G-vlO"/>
+                                            <constraint firstAttribute="bottom" secondItem="mLe-WW-3Bw" secondAttribute="bottom" id="qf3-kO-KSO"/>
+                                            <constraint firstItem="1Fn-dt-Fjd" firstAttribute="centerX" secondItem="Pis-uS-pEl" secondAttribute="centerX" id="vd5-Ye-wXY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78489571810000003" green="0.89036363360000004" blue="0.87450987099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3JR-0n-WS6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EEt-7l-dnj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3JR-0n-WS6" secondAttribute="trailing" id="KVx-FX-oNP"/>
+                            <constraint firstItem="3JR-0n-WS6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aCX-RS-Bza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3JR-0n-WS6" secondAttribute="bottom" placeholder="YES" id="fBC-Ha-mmT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo init" width="216" height="48"/>
+        <image name="btn log FB" width="334" height="62"/>
+        <image name="btn log email" width="334" height="62"/>
+        <image name="btn log in" width="334" height="109"/>
+        <image name="lbl descripcion" width="316" height="132"/>
+        <image name="lbl explorar app" width="156" height="28"/>
+    </resources>
 </document>
