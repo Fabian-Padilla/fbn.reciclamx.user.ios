@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */; };
 		BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */; };
-		BC2635DC245A9C3A004AA1E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635DB245A9C3A004AA1E8 /* ViewController.swift */; };
+		BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */; };
 		BC2635DF245A9C3A004AA1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635DD245A9C3A004AA1E8 /* Main.storyboard */; };
 		BC2635E1245A9C3B004AA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */; };
 		BC2635E4245A9C3B004AA1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */; };
+		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC2635D4245A9C3A004AA1E8 /* reciclamx.user.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reciclamx.user.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC2635DB245A9C3A004AA1E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLoginViewController.swift; sourceTree = "<group>"; };
 		BC2635DE245A9C3A004AA1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2635E3245A9C3B004AA1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2635E5245A9C3B004AA1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */,
 				BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */,
-				BC2635DB245A9C3A004AA1E8 /* ViewController.swift */,
+				BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */,
 				BC2635DD245A9C3A004AA1E8 /* Main.storyboard */,
+				BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */,
 				BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */,
 				BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */,
 				BC2635E5245A9C3B004AA1E8 /* Info.plist */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC2635DC245A9C3A004AA1E8 /* ViewController.swift in Sources */,
+				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
 				BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */,
+				BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */,
 				BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
