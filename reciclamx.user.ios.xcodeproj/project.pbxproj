@@ -14,10 +14,11 @@
 		BC2635E1245A9C3B004AA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */; };
 		BC2635E4245A9C3B004AA1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */; };
 		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
+		BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BC2635D4245A9C3A004AA1E8 /* reciclamx.user.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reciclamx.user.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2635D4245A9C3A004AA1E8 /* Recicla MX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recicla MX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeLoginViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		BC2635E3245A9C3B004AA1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2635E5245A9C3B004AA1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMaterialMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,7 @@
 		BC2635D5245A9C3A004AA1E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BC2635D4245A9C3A004AA1E8 /* reciclamx.user.ios.app */,
+				BC2635D4245A9C3A004AA1E8 /* Recicla MX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +64,7 @@
 				BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */,
 				BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */,
 				BC2635DD245A9C3A004AA1E8 /* Main.storyboard */,
+				BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */,
 				BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */,
 				BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */,
 				BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */,
@@ -87,7 +90,7 @@
 			);
 			name = reciclamx.user.ios;
 			productName = reciclamx.user.ios;
-			productReference = BC2635D4245A9C3A004AA1E8 /* reciclamx.user.ios.app */;
+			productReference = BC2635D4245A9C3A004AA1E8 /* Recicla MX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
+				BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */,
 				BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */,
 				BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */,
 				BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */,
@@ -289,13 +293,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733639M4C9;
 				INFOPLIST_FILE = reciclamx.user.ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fabianpadillalam.reciclamx-user-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Recicla MX";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -306,13 +311,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 733639M4C9;
 				INFOPLIST_FILE = reciclamx.user.ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fabianpadillalam.reciclamx-user-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Recicla MX";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
