@@ -15,8 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //  The navigation bar is hidden.
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//    
+//        self.navigationController?.navigationBar.barTintColor = UIColor.green
+    
     }
 
 

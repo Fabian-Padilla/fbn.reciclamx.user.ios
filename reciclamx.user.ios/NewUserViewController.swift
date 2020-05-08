@@ -10,11 +10,26 @@ import UIKit
 
 class NewUserViewController: UIViewController {
     
+    @IBOutlet weak var birthDayText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.birthDayText.setInputViewDatePicker(target: self, selector:#selector(tapDone) )
+        
+        
     }
+    
+    @objc func tapDone() {
+        if let datePicker = self.birthDayText.inputView as? UIDatePicker {
+            let dateformatter = DateFormatter()
+            dateformatter.dateStyle = .medium
+            self.birthDayText.text = dateformatter.string(from: datePicker.date)
+        }
+        self.birthDayText.resignFirstResponder()
+    }           	
     
     @IBAction func SaveNewUserAction(_ sender: UIButton) {
     }
