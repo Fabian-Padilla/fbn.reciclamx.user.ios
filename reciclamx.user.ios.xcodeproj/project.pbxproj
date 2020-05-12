@@ -13,9 +13,11 @@
 		BC2635DF245A9C3A004AA1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635DD245A9C3A004AA1E8 /* Main.storyboard */; };
 		BC2635E1245A9C3B004AA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */; };
 		BC2635E4245A9C3B004AA1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */; };
-		BC68297724651D1A00807B47 /* DatePickerFunctionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68297624651D1A00807B47 /* DatePickerFunctionality.swift */; };
+		BC68297724651D1A00807B47 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68297624651D1A00807B47 /* TextFieldExtension.swift */; };
+		BC6829792468CE6100807B47 /* NewUserLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6829782468CE6100807B47 /* NewUserLogic.swift */; };
 		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
 		BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */; };
+		BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7B24691D8500C71B5D /* Validators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +29,11 @@
 		BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC2635E3245A9C3B004AA1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2635E5245A9C3B004AA1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC68297624651D1A00807B47 /* DatePickerFunctionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerFunctionality.swift; sourceTree = "<group>"; };
+		BC68297624651D1A00807B47 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		BC6829782468CE6100807B47 /* NewUserLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserLogic.swift; sourceTree = "<group>"; };
 		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMaterialMenuViewController.swift; sourceTree = "<group>"; };
+		BCC39A7B24691D8500C71B5D /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		BC2635D6245A9C3A004AA1E8 /* reciclamx.user.ios */ = {
 			isa = PBXGroup;
 			children = (
+				BCC39A7A24691D6400C71B5D /* Tools */,
 				BC68297524651CC800807B47 /* View */,
 				BC68297424651CAD00807B47 /* Model */,
 				BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */,
@@ -80,7 +85,8 @@
 		BC68297424651CAD00807B47 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC68297624651D1A00807B47 /* DatePickerFunctionality.swift */,
+				BC68297624651D1A00807B47 /* TextFieldExtension.swift */,
+				BC6829782468CE6100807B47 /* NewUserLogic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +96,14 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BCC39A7A24691D6400C71B5D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BCC39A7B24691D8500C71B5D /* Validators.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +179,10 @@
 			files = (
 				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
 				BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */,
+				BC6829792468CE6100807B47 /* NewUserLogic.swift in Sources */,
 				BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */,
-				BC68297724651D1A00807B47 /* DatePickerFunctionality.swift in Sources */,
+				BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */,
+				BC68297724651D1A00807B47 /* TextFieldExtension.swift in Sources */,
 				BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */,
 				BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */,
 			);

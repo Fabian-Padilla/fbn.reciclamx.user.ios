@@ -1,23 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "electrodomesticosArtboard 1.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "electrodomesticosArtboard 1@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "electrodomesticosArtboard 1@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "filename" : "electrodomesticos.pdf",
+      "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }
