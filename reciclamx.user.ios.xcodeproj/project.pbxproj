@@ -18,6 +18,7 @@
 		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
 		BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */; };
 		BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7B24691D8500C71B5D /* Validators.swift */; };
+		BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7D246BB71E00C71B5D /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMaterialMenuViewController.swift; sourceTree = "<group>"; };
 		BCC39A7B24691D8500C71B5D /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		BCC39A7D246BB71E00C71B5D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				BC68297624651D1A00807B47 /* TextFieldExtension.swift */,
 				BC6829782468CE6100807B47 /* NewUserLogic.swift */,
+				BCC39A7D246BB71E00C71B5D /* Api.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */,
 				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
 				BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */,
 				BC6829792468CE6100807B47 /* NewUserLogic.swift in Sources */,

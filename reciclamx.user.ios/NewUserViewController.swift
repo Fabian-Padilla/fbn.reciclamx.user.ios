@@ -24,6 +24,7 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var paternoLabel: UILabel!
     @IBOutlet weak var maternoLabel: UILabel!
     @IBOutlet weak var telefonoLabel: UILabel!
+    @IBOutlet weak var birthDayLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var passwordConfirmLabel: UILabel!
     
@@ -42,8 +43,9 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     let paternoValues = labelValues(normal: "Apellido paterno", error: nil, empty: "Tu apellido paterno es requerido")
     let maternoValues = labelValues(normal: "Apellido materno", error: nil, empty: nil)
     let telefonoValues = labelValues(normal: "Telefono", error: "Verifica tu número de teléfono", empty: "Tu número de teléfono es requerido")
+    let birthDayValues = labelValues(normal: "Fecha de nacimiento", error: nil, empty: "La fecha de nacimiento es requerida")
     let passwordValues = labelValues(normal: "Password", error: "Tu contraseña no cumple lo requerido", empty: "Tu contraseña es requerida")
-    let passwordConfirmValues = labelValues(normal: "Confirma tu password", error: "Tu password no coincide", empty: "Confirma tu password" )
+    let passwordConfirmValues = labelValues(normal: "Confirma tu contraseña", error: "La contraseña no coincide", empty: "Confirma tu contraseña" )
     
     
     override func viewDidLoad() {
@@ -82,40 +84,46 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
         return currentText.replacingCharacters(in: newRange, with: string).count <= 30
     }
     
-    func validateFields() {
+    func formHasErrors() -> Bool {
         
-        let funcValidate = { (textField: UITextField!, label: UILabel, verbose: labelValues, isValid: (_ text: String) -> Bool) in
+        let fieldHasError = { (textField: UITextField!, label: UILabel, verbose: labelValues, isValid: (_ text: String) -> Bool) -> Int in
            
             if(verbose.empty != nil && textField!.text!.trimmingCharacters(in: [" "]).count == 0) {
                     label.textColor = UIColor.red
                     label.text = verbose.empty
+                    return 1
                 } else if(!isValid(textField.text!)) {
                     label.textColor = UIColor.red
                     label.text = verbose.error
+                    return 1
                 } else {
                     label.textColor = self.originalLabelColor
                     label.text = verbose.normal
+                    return 0
                 }
         }
         
-        funcValidate(emailText, emailLabel, emailValues, isValidEmail)
-        funcValidate(nombreText, nombreLabel, nombreValues, {_ in return true})
-        funcValidate(paternoText, paternoLabel, paternoValues, {_ in return true})
-        funcValidate(maternoText, maternoLabel, maternoValues, {_ in return true})
-        funcValidate(passwordText, passwordLabel, passwordValues, {_ in
-            
+        var errors = 0
+        
+        errors += fieldHasError(emailText, emailLabel, emailValues, isValidEmail)
+        errors += fieldHasError(nombreText, nombreLabel, nombreValues, {_ in return true})
+        errors += fieldHasError(paternoText, paternoLabel, paternoValues, {_ in return true})
+        errors += fieldHasError(maternoText, maternoLabel, maternoValues, {_ in return true})
+        errors += fieldHasError(telefonoText, telefonoLabel, telefonoValues, {_ in return true})
+        errors += fieldHasError(birthDayText, birthDayLabel, birthDayValues, {_ in return true})
+        errors += fieldHasError(passwordText, passwordLabel, passwordValues, {_ in
             guard let password = passwordText.text else { return false }
-            if password.count < 5 || password.count > 12 { return false }
-            
+            if password.count < 5 { return false }
             return true
         })
-        funcValidate(passwordConfirmText, passwordConfirmLabel, passwordConfirmValues, {_ in
+        errors += fieldHasError(passwordConfirmText, passwordConfirmLabel, passwordConfirmValues, {_ in
             guard let password = passwordText.text else { return false }
             guard let passwordConfirm = passwordConfirmText.text else { return false }
             if password != passwordConfirm { return false }
             return true
         })
         
+        return errors > 0
     }
     
     @objc func tapDone() {
@@ -128,7 +136,13 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     }           	
     
     @IBAction func SaveNewUserAction(_ sender: UIButton) {
-        validateFields()
+        
+        if formHasErrors() {
+            
+            let api = Api()
+            
+            api.postLogin()
+        }
     }
     
 
