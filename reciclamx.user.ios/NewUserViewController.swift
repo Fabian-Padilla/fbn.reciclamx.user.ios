@@ -28,9 +28,9 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var passwordConfirmLabel: UILabel!
     
+    private var api = Api()
     
     private var originalLabelColor = UIColor.white
-    private let newUserLogic = NewUserLogic()
     
     struct labelValues {
         let normal: String
@@ -63,6 +63,7 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
         
         birthDayText.setInputViewDatePicker(target: self, selector: #selector(tapDone))
         
+        api.securityDelegate = self
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -76,6 +77,7 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
 //        }
     }
     
+    // esta funcion se usa gracias a que el controlador usa UITextFieldDelegate
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = textField.text ?? ""
         
@@ -137,14 +139,30 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func SaveNewUserAction(_ sender: UIButton) {
         
-        if formHasErrors() {
+        if !formHasErrors() {
             
-            let api = Api()
+            let formatterGet = DateFormatter()
+            formatterGet.dateFormat = "MMM dd, yyyy"
             
-            api.postLogin()
+            let formatterWrite = DateFormatter()
+            formatterWrite.dateFormat = "yyyy-MM-dd"
+            
+            if let date = formatterGet.date(from: birthDayText.text!) {
+            
+                let birthDayString = formatterWrite.string(from: date)
+                
+                let userBiz = UserBiz(_id: nil, email: emailText.text!, nombres: nombreText.text!, apellidoPaterno: paternoText.text!, apellidoMaterno: maternoText.text!, fechaNacimiento: birthDayString, emailValidado: true, password: passwordText.text!, fechaInsercion: nil)
+                
+                api.post(user: userBiz, token: nil)
+                
+            } else {
+                print("Error al convertir la fecha de nacimiento a yyyy-MM-dd")
+            }
+            //api.postLogin()
+        } else {
+            Alert.ShowBasicAlert(on: self, with: "No se puede crear el usuario", message: "Verifica tu información")
         }
     }
-    
 
     /*
     // MARK: - Navigation
@@ -156,4 +174,26 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     }
     */
 
+}
+
+
+extension NewUserViewController : SecurityDelegate {
+    
+    func didUserInserted(_ securityManager: Api, user: UserBiz) {
+        print("El usuario fue insertado")
+    }
+    
+    func emailAlreadyExist(_ securityManager: Api) {
+        print("El usuario ya existe")
+        
+        
+        DispatchQueue.main.async {
+            //self.emailLabel.text = "Este email ya esta registrado"
+            Alert.ShowBasicAlert(on: self, with: "No se puede crear el usuario", message: "El correo electrónico ya existe")
+        }
+    }
+    
+    func didFail(width error: Error) {
+        print(error)
+    }
 }

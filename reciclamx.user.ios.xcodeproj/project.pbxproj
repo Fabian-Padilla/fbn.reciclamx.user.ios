@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC05DCD92472176700E6A3A8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05DCD82472176700E6A3A8 /* Alert.swift */; };
 		BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */; };
 		BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */; };
 		BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */; };
@@ -14,14 +15,17 @@
 		BC2635E1245A9C3B004AA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */; };
 		BC2635E4245A9C3B004AA1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */; };
 		BC68297724651D1A00807B47 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68297624651D1A00807B47 /* TextFieldExtension.swift */; };
-		BC6829792468CE6100807B47 /* NewUserLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6829782468CE6100807B47 /* NewUserLogic.swift */; };
+		BC8ADE4F2471C61B00520EAD /* ServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */; };
 		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
 		BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */; };
 		BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7B24691D8500C71B5D /* Validators.swift */; };
 		BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7D246BB71E00C71B5D /* Api.swift */; };
+		BCFB1C04246F3E950018FC11 /* UserBiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1C03246F3E950018FC11 /* UserBiz.swift */; };
+		BCFB1C06246F3EDB0018FC11 /* SecurityBiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1C05246F3EDB0018FC11 /* SecurityBiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC05DCD82472176700E6A3A8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BC2635D4245A9C3A004AA1E8 /* Recicla MX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recicla MX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,11 +35,13 @@
 		BC2635E3245A9C3B004AA1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2635E5245A9C3B004AA1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC68297624651D1A00807B47 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
-		BC6829782468CE6100807B47 /* NewUserLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserLogic.swift; sourceTree = "<group>"; };
+		BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAuth.swift; sourceTree = "<group>"; };
 		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMaterialMenuViewController.swift; sourceTree = "<group>"; };
 		BCC39A7B24691D8500C71B5D /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		BCC39A7D246BB71E00C71B5D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		BCFB1C03246F3E950018FC11 /* UserBiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBiz.swift; sourceTree = "<group>"; };
+		BCFB1C05246F3EDB0018FC11 /* SecurityBiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityBiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */,
 				BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */,
 				BC2635E5245A9C3B004AA1E8 /* Info.plist */,
+				BC05DCD82472176700E6A3A8 /* Alert.swift */,
 			);
 			path = reciclamx.user.ios;
 			sourceTree = "<group>";
@@ -87,9 +94,9 @@
 		BC68297424651CAD00807B47 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BC8ADE4D2471C5D500520EAD /* Api */,
+				BCFB1C02246F3DF30018FC11 /* Entities */,
 				BC68297624651D1A00807B47 /* TextFieldExtension.swift */,
-				BC6829782468CE6100807B47 /* NewUserLogic.swift */,
-				BCC39A7D246BB71E00C71B5D /* Api.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,12 +108,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BC8ADE4D2471C5D500520EAD /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				BCC39A7D246BB71E00C71B5D /* Api.swift */,
+				BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		BCC39A7A24691D6400C71B5D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				BCC39A7B24691D8500C71B5D /* Validators.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		BCFB1C02246F3DF30018FC11 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BCFB1C03246F3E950018FC11 /* UserBiz.swift */,
+				BCFB1C05246F3EDB0018FC11 /* SecurityBiz.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,10 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCFB1C04246F3E950018FC11 /* UserBiz.swift in Sources */,
 				BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */,
 				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
+				BC8ADE4F2471C61B00520EAD /* ServiceAuth.swift in Sources */,
+				BCFB1C06246F3EDB0018FC11 /* SecurityBiz.swift in Sources */,
 				BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */,
-				BC6829792468CE6100807B47 /* NewUserLogic.swift in Sources */,
+				BC05DCD92472176700E6A3A8 /* Alert.swift in Sources */,
 				BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */,
 				BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */,
 				BC68297724651D1A00807B47 /* TextFieldExtension.swift in Sources */,
