@@ -9,25 +9,37 @@
 import UIKit
 
 class SelectMaterialMenuViewController: UIViewController {
+    
+    var welcomeMode: Bool = false
+    
+    enum buttonIdentifier {
+        case pet
+        case electrodomestico
+        case aluminio
+        case papel
+        case tecnologia
+        case tetrapak
+        case plastico
+        case acumulador
+        case ropa
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if welcomeMode == true {
+            performSegue(withIdentifier: "goToWelcomFromNewUser", sender: self)
+        }
     }
     
     @IBAction func MaterialSelected(_ sender: UIButton) {
         print(sender.currentTitle!)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+         
     }
-    */
 
 }

@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C9288EC939863AFBC3E5677 /* Pods_reciclamx_user_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A53AECCE7E76A03F73295CE /* Pods_reciclamx_user_ios.framework */; };
 		BC05DCD92472176700E6A3A8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05DCD82472176700E6A3A8 /* Alert.swift */; };
+		BC05DCDC247237D100E6A3A8 /* LoginWithEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05DCDB247237D100E6A3A8 /* LoginWithEmailViewController.swift */; };
+		BC05DCDE2472438F00E6A3A8 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05DCDD2472438F00E6A3A8 /* LoginRequest.swift */; };
 		BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */; };
 		BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */; };
 		BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */; };
@@ -15,6 +18,9 @@
 		BC2635E1245A9C3B004AA1E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */; };
 		BC2635E4245A9C3B004AA1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2635E2245A9C3B004AA1E8 /* LaunchScreen.storyboard */; };
 		BC68297724651D1A00807B47 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC68297624651D1A00807B47 /* TextFieldExtension.swift */; };
+		BC7BA1302472514F006671EC /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7BA12F2472514F006671EC /* LoginResponse.swift */; };
+		BC7BA1322473A335006671EC /* Posteable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7BA1312473A335006671EC /* Posteable.swift */; };
+		BC7BA1342474D156006671EC /* WelcomFromRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7BA1332474D156006671EC /* WelcomFromRegisterViewController.swift */; };
 		BC8ADE4F2471C61B00520EAD /* ServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */; };
 		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
 		BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */; };
@@ -25,7 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A53AECCE7E76A03F73295CE /* Pods_reciclamx_user_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reciclamx_user_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		890A068251A09A1B4CBEE9F2 /* Pods-reciclamx.user.ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reciclamx.user.ios.debug.xcconfig"; path = "Target Support Files/Pods-reciclamx.user.ios/Pods-reciclamx.user.ios.debug.xcconfig"; sourceTree = "<group>"; };
 		BC05DCD82472176700E6A3A8 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BC05DCDB247237D100E6A3A8 /* LoginWithEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailViewController.swift; sourceTree = "<group>"; };
+		BC05DCDD2472438F00E6A3A8 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		BC2635D4245A9C3A004AA1E8 /* Recicla MX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recicla MX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2635D7245A9C3A004AA1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +45,9 @@
 		BC2635E3245A9C3B004AA1E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC2635E5245A9C3B004AA1E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC68297624651D1A00807B47 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		BC7BA12F2472514F006671EC /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		BC7BA1312473A335006671EC /* Posteable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posteable.swift; sourceTree = "<group>"; };
+		BC7BA1332474D156006671EC /* WelcomFromRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomFromRegisterViewController.swift; sourceTree = "<group>"; };
 		BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAuth.swift; sourceTree = "<group>"; };
 		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMaterialMenuViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +55,7 @@
 		BCC39A7D246BB71E00C71B5D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		BCFB1C03246F3E950018FC11 /* UserBiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBiz.swift; sourceTree = "<group>"; };
 		BCFB1C05246F3EDB0018FC11 /* SecurityBiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityBiz.swift; sourceTree = "<group>"; };
+		E3121C6470437865708D0220 /* Pods-reciclamx.user.ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reciclamx.user.ios.release.xcconfig"; path = "Target Support Files/Pods-reciclamx.user.ios/Pods-reciclamx.user.ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +63,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9288EC939863AFBC3E5677 /* Pods_reciclamx_user_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EB06A722B8977ACE8BA982 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				890A068251A09A1B4CBEE9F2 /* Pods-reciclamx.user.ios.debug.xcconfig */,
+				E3121C6470437865708D0220 /* Pods-reciclamx.user.ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6B58B808FD37B91E97CC70A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A53AECCE7E76A03F73295CE /* Pods_reciclamx_user_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC05DCDA2472379D00E6A3A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC05DCDB247237D100E6A3A8 /* LoginWithEmailViewController.swift */,
+				BC7BA1332474D156006671EC /* WelcomFromRegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		BC2635CB245A9C3A004AA1E8 = {
 			isa = PBXGroup;
 			children = (
 				BC2635D6245A9C3A004AA1E8 /* reciclamx.user.ios */,
 				BC2635D5245A9C3A004AA1E8 /* Products */,
+				13EB06A722B8977ACE8BA982 /* Pods */,
+				6B58B808FD37B91E97CC70A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +117,7 @@
 		BC2635D6245A9C3A004AA1E8 /* reciclamx.user.ios */ = {
 			isa = PBXGroup;
 			children = (
+				BC05DCDA2472379D00E6A3A8 /* Controller */,
 				BCC39A7A24691D6400C71B5D /* Tools */,
 				BC68297524651CC800807B47 /* View */,
 				BC68297424651CAD00807B47 /* Model */,
@@ -130,6 +174,9 @@
 			children = (
 				BCFB1C03246F3E950018FC11 /* UserBiz.swift */,
 				BCFB1C05246F3EDB0018FC11 /* SecurityBiz.swift */,
+				BC05DCDD2472438F00E6A3A8 /* LoginRequest.swift */,
+				BC7BA12F2472514F006671EC /* LoginResponse.swift */,
+				BC7BA1312473A335006671EC /* Posteable.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -141,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC2635E8245A9C3B004AA1E8 /* Build configuration list for PBXNativeTarget "reciclamx.user.ios" */;
 			buildPhases = (
+				04F9747F8FB96015219F3B32 /* [CP] Check Pods Manifest.lock */,
 				BC2635D0245A9C3A004AA1E8 /* Sources */,
 				BC2635D1245A9C3A004AA1E8 /* Frameworks */,
 				BC2635D2245A9C3A004AA1E8 /* Resources */,
+				A0AA9F1BBF904023DDBDAB28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,11 +249,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04F9747F8FB96015219F3B32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reciclamx.user.ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0AA9F1BBF904023DDBDAB28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reciclamx.user.ios/Pods-reciclamx.user.ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-reciclamx.user.ios/Pods-reciclamx.user.ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reciclamx.user.ios/Pods-reciclamx.user.ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC2635D0245A9C3A004AA1E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC05DCDC247237D100E6A3A8 /* LoginWithEmailViewController.swift in Sources */,
+				BC05DCDE2472438F00E6A3A8 /* LoginRequest.swift in Sources */,
 				BCFB1C04246F3E950018FC11 /* UserBiz.swift in Sources */,
 				BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */,
 				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
@@ -212,11 +305,14 @@
 				BCFB1C06246F3EDB0018FC11 /* SecurityBiz.swift in Sources */,
 				BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */,
 				BC05DCD92472176700E6A3A8 /* Alert.swift in Sources */,
+				BC7BA1342474D156006671EC /* WelcomFromRegisterViewController.swift in Sources */,
+				BC7BA1322473A335006671EC /* Posteable.swift in Sources */,
 				BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */,
 				BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */,
 				BC68297724651D1A00807B47 /* TextFieldExtension.swift in Sources */,
 				BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */,
 				BC2635DA245A9C3A004AA1E8 /* SceneDelegate.swift in Sources */,
+				BC7BA1302472514F006671EC /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +454,7 @@
 		};
 		BC2635E9245A9C3B004AA1E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 890A068251A09A1B4CBEE9F2 /* Pods-reciclamx.user.ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +473,7 @@
 		};
 		BC2635EA245A9C3B004AA1E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3121C6470437865708D0220 /* Pods-reciclamx.user.ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

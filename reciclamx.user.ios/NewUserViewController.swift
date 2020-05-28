@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewUserViewController: UIViewController, UITextFieldDelegate {
+class NewUserViewController: UIViewController {
     
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var nombreText: UITextField!
@@ -66,26 +66,6 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
         api.securityDelegate = self
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true;
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-//        if textField == self.emailText {
-//            validateFields(textField: self.emailText)
-//        }
-    }
-    
-    // esta funcion se usa gracias a que el controlador usa UITextFieldDelegate
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let currentText = textField.text ?? ""
-        
-        guard let newRange = Range(range, in: currentText) else { return false }
-        
-        return currentText.replacingCharacters(in: newRange, with: string).count <= 30
-    }
-    
     func formHasErrors() -> Bool {
         
         let fieldHasError = { (textField: UITextField!, label: UILabel, verbose: labelValues, isValid: (_ text: String) -> Bool) -> Int in
@@ -131,7 +111,8 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
     @objc func tapDone() {
         if let datePicker = self.birthDayText.inputView as? UIDatePicker {
             let dateformatter = DateFormatter()
-            dateformatter.dateStyle = .medium
+            //dateformatter.dateStyle = .medium
+            dateformatter.dateFormat = "MMM dd, yyyy"
             self.birthDayText.text = dateformatter.string(from: datePicker.date)
         }
         self.birthDayText.resignFirstResponder()
@@ -153,7 +134,7 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
                 
                 let userBiz = UserBiz(_id: nil, email: emailText.text!, nombres: nombreText.text!, apellidoPaterno: paternoText.text!, apellidoMaterno: maternoText.text!, fechaNacimiento: birthDayString, emailValidado: true, password: passwordText.text!, fechaInsercion: nil)
                 
-                api.post(user: userBiz, token: nil)
+                api.post(user: userBiz)
                 
             } else {
                 print("Error al convertir la fecha de nacimiento a yyyy-MM-dd")
@@ -164,16 +145,36 @@ class NewUserViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "goToSelectReciclaje" {
+            let selectMaterialVC = segue.destination as! SelectMaterialMenuViewController
+            selectMaterialVC.welcomeMode = true
+        }
     }
-    */
 
+}
+
+extension NewUserViewController : UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        //        if textField == self.emailText {
+        //            validateFields(textField: self.emailText)
+        //        }
+    }
+    
+    // esta funcion se usa gracias a que el controlador usa UITextFieldDelegate
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let currentText = textField.text ?? ""
+        
+        guard let newRange = Range(range, in: currentText) else { return false }
+        
+        return currentText.replacingCharacters(in: newRange, with: string).count <= 30
+    }
 }
 
 
@@ -181,6 +182,10 @@ extension NewUserViewController : SecurityDelegate {
     
     func didUserInserted(_ securityManager: Api, user: UserBiz) {
         print("El usuario fue insertado")
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "goToSelectReciclaje", sender: self)
+        }
     }
     
     func emailAlreadyExist(_ securityManager: Api) {
