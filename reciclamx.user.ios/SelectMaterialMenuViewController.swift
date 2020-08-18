@@ -36,6 +36,8 @@ class SelectMaterialMenuViewController: UIViewController {
     
     @IBAction func MaterialSelected(_ sender: UIButton) {
         print(sender.currentTitle!)
+        
+        performSegue(withIdentifier: "goToPrepare", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -24,6 +24,8 @@
 		BC8ADE4F2471C61B00520EAD /* ServiceAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */; };
 		BCA640B0245FC03B00FBD3EA /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */; };
 		BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */; };
+		BCAB71FC24804CF0005A8324 /* ReciclaMx_Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCAB71FA24804CF0005A8324 /* ReciclaMx_Model.xcdatamodeld */; };
+		BCAB7221248322A0005A8324 /* SetPostOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB7220248322A0005A8324 /* SetPostOptionsViewController.swift */; };
 		BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7B24691D8500C71B5D /* Validators.swift */; };
 		BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC39A7D246BB71E00C71B5D /* Api.swift */; };
 		BCFB1C04246F3E950018FC11 /* UserBiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB1C03246F3E950018FC11 /* UserBiz.swift */; };
@@ -51,6 +53,8 @@
 		BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAuth.swift; sourceTree = "<group>"; };
 		BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
 		BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMaterialMenuViewController.swift; sourceTree = "<group>"; };
+		BCAB71FB24804CF0005A8324 /* ReciclaMx_Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReciclaMx_Model.xcdatamodel; sourceTree = "<group>"; };
+		BCAB7220248322A0005A8324 /* SetPostOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPostOptionsViewController.swift; sourceTree = "<group>"; };
 		BCC39A7B24691D8500C71B5D /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		BCC39A7D246BB71E00C71B5D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		BCFB1C03246F3E950018FC11 /* UserBiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBiz.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			children = (
 				BC05DCDB247237D100E6A3A8 /* LoginWithEmailViewController.swift */,
 				BC7BA1332474D156006671EC /* WelcomFromRegisterViewController.swift */,
+				BCAB7220248322A0005A8324 /* SetPostOptionsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				BC2635D9245A9C3A004AA1E8 /* SceneDelegate.swift */,
 				BC2635DB245A9C3A004AA1E8 /* WelcomeLoginViewController.swift */,
 				BC2635DD245A9C3A004AA1E8 /* Main.storyboard */,
+				BCAB71FA24804CF0005A8324 /* ReciclaMx_Model.xcdatamodeld */,
 				BCA640B3245FE68800FBD3EA /* SelectMaterialMenuViewController.swift */,
 				BCA640AF245FC03B00FBD3EA /* NewUserViewController.swift */,
 				BC2635E0245A9C3B004AA1E8 /* Assets.xcassets */,
@@ -148,6 +154,7 @@
 		BC68297524651CC800807B47 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCAB7248248367DD005A8324 /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +166,13 @@
 				BC8ADE4E2471C61B00520EAD /* ServiceAuth.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		BCAB7248248367DD005A8324 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		BCC39A7A24691D6400C71B5D /* Tools */ = {
@@ -300,12 +314,14 @@
 				BC05DCDE2472438F00E6A3A8 /* LoginRequest.swift in Sources */,
 				BCFB1C04246F3E950018FC11 /* UserBiz.swift in Sources */,
 				BCC39A7E246BB71E00C71B5D /* Api.swift in Sources */,
+				BCAB71FC24804CF0005A8324 /* ReciclaMx_Model.xcdatamodeld in Sources */,
 				BC2635DC245A9C3A004AA1E8 /* WelcomeLoginViewController.swift in Sources */,
 				BC8ADE4F2471C61B00520EAD /* ServiceAuth.swift in Sources */,
 				BCFB1C06246F3EDB0018FC11 /* SecurityBiz.swift in Sources */,
 				BCA640B4245FE68800FBD3EA /* SelectMaterialMenuViewController.swift in Sources */,
 				BC05DCD92472176700E6A3A8 /* Alert.swift in Sources */,
 				BC7BA1342474D156006671EC /* WelcomFromRegisterViewController.swift in Sources */,
+				BCAB7221248322A0005A8324 /* SetPostOptionsViewController.swift in Sources */,
 				BC7BA1322473A335006671EC /* Posteable.swift in Sources */,
 				BC2635D8245A9C3A004AA1E8 /* AppDelegate.swift in Sources */,
 				BCC39A7C24691D8500C71B5D /* Validators.swift in Sources */,
@@ -512,6 +528,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCAB71FA24804CF0005A8324 /* ReciclaMx_Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCAB71FB24804CF0005A8324 /* ReciclaMx_Model.xcdatamodel */,
+			);
+			currentVersion = BCAB71FB24804CF0005A8324 /* ReciclaMx_Model.xcdatamodel */;
+			path = ReciclaMx_Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BC2635CC245A9C3A004AA1E8 /* Project object */;
 }

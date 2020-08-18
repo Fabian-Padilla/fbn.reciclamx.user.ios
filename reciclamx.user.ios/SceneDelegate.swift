@@ -21,21 +21,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         //guard let _ = (scene as? UIWindowScene) else { return }
         //  ref: https://stackoverflow.com/questions/58084127/ios-13-swift-set-application-root-view-controller-programmatically-does-not
+        
+        //      UIStoryboard
+        //          instantiateViewController
+        //          scene
+        //      UIWomdpwsScene
+        //      UIWindow
+        //      UINavigationController
+        //          rootViewController
+        //          makeKeyAndVisible
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        guard let rootVC = storyBoard.instantiateViewController(identifier: "WelcomLoginOptionals") as?
+            WelcomeLoginViewController else {
+            print("WelcomeLoginViewController not found")
+            return
+        }
         if let windowScene = scene as? UIWindowScene {
-            
-            let window = UIWindow(windowScene: windowScene)
-            self.window = window
-            
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            guard let rootVC = storyBoard.instantiateViewController(identifier: "WelcomLoginOptionals") as?
-                WelcomeLoginViewController else {
-                print("WelcomeLoginViewController not found")
-                return
-            }
+            self.window = UIWindow(windowScene: windowScene)
             let rootNC = UINavigationController(rootViewController: rootVC)
             self.window?.rootViewController = rootNC
             self.window?.makeKeyAndVisible()
-            
         }
     }
 
